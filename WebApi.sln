@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinessAccess", "Bussines
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonData", "CommonData\CommonData.csproj", "{75B2A4B6-4878-411E-9D71-65D7E00BEED4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestCase", "UnitTestCase\UnitTestCase.csproj", "{C7DFFAFA-4E5A-4DC5-B1B3-BC233D875021}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{75B2A4B6-4878-411E-9D71-65D7E00BEED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75B2A4B6-4878-411E-9D71-65D7E00BEED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75B2A4B6-4878-411E-9D71-65D7E00BEED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7DFFAFA-4E5A-4DC5-B1B3-BC233D875021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7DFFAFA-4E5A-4DC5-B1B3-BC233D875021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7DFFAFA-4E5A-4DC5-B1B3-BC233D875021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7DFFAFA-4E5A-4DC5-B1B3-BC233D875021}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
