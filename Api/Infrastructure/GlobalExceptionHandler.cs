@@ -7,7 +7,7 @@ using log4net;
 
 namespace Api.Infrastructure
 {
-    public sealed class CustomExceptionHandler : ExceptionHandler
+    public sealed class GlobalExceptionHandler : ExceptionHandler
     {
         private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         public override void Handle(ExceptionHandlerContext context)

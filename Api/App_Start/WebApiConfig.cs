@@ -21,13 +21,14 @@ namespace Api
 
             // Web API routes
             config.MapHttpAttributeRoutes();
+            config.Filters.Add(new CustomExceptionFilter());
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
-            config.Services.Replace(typeof(IExceptionHandler), new CustomExceptionHandler());
+            config.Services.Replace(typeof(IExceptionHandler), new GlobalExceptionHandler());
         }
     }
 }

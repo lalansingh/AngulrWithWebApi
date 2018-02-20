@@ -1,5 +1,9 @@
 ﻿using System;
+using System.Net;
+using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web.Http;
+using System.Web.Http.Results;
 using Api.Filters;
 using Api.Models;
 using AutoMapper;
@@ -40,6 +44,18 @@ namespace Api.Controllers
             //var rest = Mapper.Map<UserModel, UserViewModel>(result);
             return res;
         }
-        
+
+
+        [HttpGet]
+        [Route("UserDetailsById")]
+        [ModelValidator]
+        [RoleAuthorize(Roles = Roles.Admin)]
+        public IHttpActionResult UserDetailsById(string userId)
+        {
+            var result = _userManager.UserDetails(userId);
+            var res = _mapper.Map<UserModel, UserViewModel>(result);
+            //var rest = Mapper.Map<UserModel, UserViewModel>(result);
+            return Ok(res);
+        }
     }
 }

@@ -360,7 +360,8 @@
     </Compile>
     <Compile Include="Infrastructure\AuthenticationRefreshTokenProvider.cs" />
     <Compile Include="Infrastructure\AuthorizationServerProvider.cs" />
-    <Compile Include="Infrastructure\CustomExceptionHandler.cs" />
+    <Compile Include="Infrastructure\CustomExceptionFilter.cs" />
+    <Compile Include="Infrastructure\GlobalExceptionHandler.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
